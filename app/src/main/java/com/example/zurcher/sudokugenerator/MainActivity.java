@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.example.zurcher.sudokugenerator.helper.SudokuGenerator;
+import com.example.zurcher.sudokugenerator.generator.SudokuBoardGenerator;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.Q3_2) TextView q3_2;
     @Bind(R.id.Q3_3) TextView q3_3;
 
-    private SudokuGenerator mSudokuGenerator;
+    private SudokuBoardGenerator mSudokuGenerator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        mSudokuGenerator = new SudokuGenerator();
+        mSudokuGenerator = new SudokuBoardGenerator();
 
         generateSudokuBoardValues();
     }
 
     private void generateSudokuBoardValues() {
-        int[][] values = mSudokuGenerator.hardGenerateFirstQuadrantValues();
+        int[][] values = mSudokuGenerator.generateFourValueSudokuValuesFixedPlaces();
 
         q0_0.setText("" + values[0][0]);
         q0_1.setText("" + values[0][1]);
@@ -67,5 +67,10 @@ public class MainActivity extends AppCompatActivity {
         q2_3.setText("" + values[2][3]);
         q3_2.setText("" + values[3][2]);
         q3_3.setText("" + values[3][3]);
+
+        values = mSudokuGenerator.generateNineValueSudokuValuesFixedPlaces();
+
     }
+
+
 }
