@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sudoku Generator</string>
+    <string name="generate_board_label">Generate New Board</string>
+</resources>
