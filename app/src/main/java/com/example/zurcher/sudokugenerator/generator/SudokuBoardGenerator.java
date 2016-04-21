@@ -180,6 +180,8 @@ public class SudokuBoardGenerator {
         values[7][5] = numberToFill;
         values[8][0] = numberToFill;
 
+        //shuffleRandomColumns();
+
         return values;
     }
 
@@ -236,7 +238,7 @@ public class SudokuBoardGenerator {
         values[0][2] = numberToFill;
         values[2][3] = numberToFill;
 
-        shuffleRandomColumns();
+        //shuffleRandomColumns();
 
         return values;
     }

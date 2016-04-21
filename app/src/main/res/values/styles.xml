@@ -11,10 +11,20 @@
     <style name="SudokuTextView" parent="@android:style/TextAppearance.Small">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name ="android:background">@drawable/layout_border</item>
+        <item name ="android:background">@drawable/cell_border</item>
         <item name ="android:paddingLeft">@dimen/number_padding</item>
         <item name ="android:paddingRight">@dimen/number_padding</item>
-        <item name ="android:textSize">@dimen/number_text_size</item>
+        <item name ="android:textSize">@dimen/four_by_four_sudoku_number_text_size</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="NineByNineSudokuTextView" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name ="android:background">@drawable/cell_border</item>
+        <item name ="android:paddingLeft">@dimen/number_padding</item>
+        <item name ="android:paddingRight">@dimen/number_padding</item>
+        <item name ="android:textSize">@dimen/nine_by_nine_sudoku_number_text_size</item>
         <item name="android:typeface">monospace</item>
     </style>
 

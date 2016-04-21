@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/Q1_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/quadrant_border">
+
+            <TextView
+                android:id="@+id/Q0_0"
+                style="@style/NineByNineSudokuTextView"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q0_1"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q0_0"
+                android:layout_toRightOf="@+id/Q0_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q0_2"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q0_1"
+                android:layout_toRightOf="@+id/Q0_1"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q1_0"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Q0_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q1_1"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@+id/Q0_0"
+                android:layout_toEndOf="@+id/Q1_0"
+                android:layout_toRightOf="@+id/Q1_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q1_2"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q0_2"
+                android:layout_toEndOf="@+id/Q1_1"
+                android:layout_toRightOf="@+id/Q1_1"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q2_0"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q1_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q2_1"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q1_0"
+                android:layout_toEndOf="@+id/Q2_0"
+                android:layout_toRightOf="@+id/Q2_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q2_2"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q1_2"
+                android:layout_toEndOf="@id/Q2_1"
+                android:layout_toRightOf="@id/Q2_1"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Q2_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Q1_layout"
+            android:background="@drawable/quadrant_border">
+
+            <TextView
+                android:id="@+id/Q3_0"
+                style="@style/NineByNineSudokuTextView"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q3_1"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_toEndOf="@+id/Q3_0"
+                android:layout_toRightOf="@+id/Q3_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q3_2"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_toEndOf="@+id/Q3_1"
+                android:layout_toRightOf="@+id/Q3_1"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q4_0"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q3_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q4_1"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q3_1"
+                android:layout_toEndOf="@+id/Q4_0"
+                android:layout_toRightOf="@+id/Q4_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q4_2"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q3_2"
+                android:layout_toEndOf="@+id/Q4_1"
+                android:layout_toRightOf="@+id/Q4_1"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q5_0"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q4_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q5_1"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q4_1"
+                android:layout_toEndOf="@+id/Q5_0"
+                android:layout_toRightOf="@+id/Q5_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q5_2"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q4_2"
+                android:layout_toEndOf="@+id/Q5_1"
+                android:layout_toRightOf="@+id/Q5_1"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Q3_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Q2_layout"
+            android:background="@drawable/quadrant_border">
+
+            <TextView
+                android:id="@+id/Q6_0"
+                style="@style/NineByNineSudokuTextView"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q6_1"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_toEndOf="@+id/Q6_0"
+                android:layout_toRightOf="@+id/Q6_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q6_2"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_toEndOf="@+id/Q6_1"
+                android:layout_toRightOf="@+id/Q6_1"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q7_0"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q6_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q7_1"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q6_1"
+                android:layout_toEndOf="@+id/Q7_0"
+                android:layout_toRightOf="@+id/Q7_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q7_2"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q6_2"
+                android:layout_toEndOf="@+id/Q7_1"
+                android:layout_toRightOf="@+id/Q7_1"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q8_0"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q7_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q8_1"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q7_1"
+                android:layout_toEndOf="@+id/Q8_0"
+                android:layout_toRightOf="@+id/Q8_0"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q8_2"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q7_2"
+                android:layout_toEndOf="@+id/Q8_1"
+                android:layout_toRightOf="@+id/Q8_1"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Q4_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/Q1_layout"
+            android:layout_toRightOf="@+id/Q1_layout"
+            android:background="@drawable/quadrant_border">
+
+            <TextView
+                android:id="@+id/Q0_3"
+                style="@style/NineByNineSudokuTextView"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q0_4"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q0_3"
+                android:layout_toRightOf="@+id/Q0_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q0_5"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q0_4"
+                android:layout_toRightOf="@+id/Q0_4"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q1_3"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Q0_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q1_4"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@+id/Q0_3"
+                android:layout_toEndOf="@+id/Q1_3"
+                android:layout_toRightOf="@+id/Q1_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q1_5"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q0_5"
+                android:layout_toEndOf="@+id/Q1_4"
+                android:layout_toRightOf="@+id/Q1_4"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q2_3"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q1_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q2_4"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q1_4"
+                android:layout_toEndOf="@+id/Q2_3"
+                android:layout_toRightOf="@+id/Q2_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q2_5"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q1_5"
+                android:layout_toEndOf="@id/Q2_4"
+                android:layout_toRightOf="@id/Q2_4"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Q5_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Q4_layout"
+            android:layout_toEndOf="@id/Q2_layout"
+            android:layout_toRightOf="@id/Q2_layout"
+            android:background="@drawable/quadrant_border">
+
+            <TextView
+                android:id="@+id/Q3_3"
+                style="@style/NineByNineSudokuTextView"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q3_4"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q3_3"
+                android:layout_toRightOf="@+id/Q3_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q3_5"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q3_4"
+                android:layout_toRightOf="@+id/Q3_4"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q4_3"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Q3_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q4_4"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@+id/Q3_4"
+                android:layout_toEndOf="@+id/Q4_3"
+                android:layout_toRightOf="@+id/Q4_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q4_5"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q3_5"
+                android:layout_toEndOf="@+id/Q4_4"
+                android:layout_toRightOf="@+id/Q4_4"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q5_3"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q4_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q5_4"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q4_4"
+                android:layout_toEndOf="@+id/Q5_3"
+                android:layout_toRightOf="@+id/Q5_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q5_5"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q4_5"
+                android:layout_toEndOf="@id/Q5_4"
+                android:layout_toRightOf="@id/Q5_4"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Q6_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Q5_layout"
+            android:layout_toEndOf="@id/Q3_layout"
+            android:layout_toRightOf="@id/Q3_layout"
+            android:background="@drawable/quadrant_border">
+
+            <TextView
+                android:id="@+id/Q6_3"
+                style="@style/NineByNineSudokuTextView"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q6_4"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q6_3"
+                android:layout_toRightOf="@+id/Q6_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q6_5"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q6_4"
+                android:layout_toRightOf="@+id/Q6_4"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q7_3"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Q6_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q7_4"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@+id/Q6_4"
+                android:layout_toEndOf="@+id/Q7_3"
+                android:layout_toRightOf="@+id/Q7_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q7_5"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q6_5"
+                android:layout_toEndOf="@+id/Q7_4"
+                android:layout_toRightOf="@+id/Q7_4"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q8_3"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q7_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q8_4"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q7_4"
+                android:layout_toEndOf="@+id/Q8_3"
+                android:layout_toRightOf="@+id/Q8_3"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q8_5"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q7_5"
+                android:layout_toEndOf="@id/Q8_4"
+                android:layout_toRightOf="@id/Q8_4"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Q7_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/Q4_layout"
+            android:layout_toRightOf="@id/Q4_layout"
+            android:background="@drawable/quadrant_border">
+
+            <TextView
+                android:id="@+id/Q0_6"
+                style="@style/NineByNineSudokuTextView"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q0_7"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q0_6"
+                android:layout_toRightOf="@+id/Q0_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q0_8"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q0_7"
+                android:layout_toRightOf="@+id/Q0_7"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q1_6"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Q0_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q1_7"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@+id/Q0_7"
+                android:layout_toEndOf="@+id/Q1_6"
+                android:layout_toRightOf="@+id/Q1_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q1_8"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q0_8"
+                android:layout_toEndOf="@+id/Q1_7"
+                android:layout_toRightOf="@+id/Q1_7"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q2_6"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q1_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q2_7"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q1_7"
+                android:layout_toEndOf="@+id/Q2_6"
+                android:layout_toRightOf="@+id/Q2_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q2_8"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q1_8"
+                android:layout_toEndOf="@id/Q2_7"
+                android:layout_toRightOf="@id/Q2_7"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Q8_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Q7_layout"
+            android:layout_toEndOf="@id/Q5_layout"
+            android:layout_toRightOf="@id/Q5_layout"
+            android:background="@drawable/quadrant_border">
+
+            <TextView
+                android:id="@+id/Q3_6"
+                style="@style/NineByNineSudokuTextView"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q3_7"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q3_6"
+                android:layout_toRightOf="@+id/Q3_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q3_8"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q3_7"
+                android:layout_toRightOf="@+id/Q3_7"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q4_6"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Q3_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q4_7"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@+id/Q3_7"
+                android:layout_toEndOf="@+id/Q4_6"
+                android:layout_toRightOf="@+id/Q4_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q4_8"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q3_8"
+                android:layout_toEndOf="@+id/Q4_7"
+                android:layout_toRightOf="@+id/Q4_7"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q5_6"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q4_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q5_7"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q4_7"
+                android:layout_toEndOf="@+id/Q5_6"
+                android:layout_toRightOf="@+id/Q5_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q5_8"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q4_8"
+                android:layout_toEndOf="@id/Q5_7"
+                android:layout_toRightOf="@id/Q5_7"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Q9_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Q8_layout"
+            android:layout_toEndOf="@id/Q6_layout"
+            android:layout_toRightOf="@id/Q6_layout"
+            android:background="@drawable/quadrant_border">
+
+            <TextView
+                android:id="@+id/Q6_6"
+                style="@style/NineByNineSudokuTextView"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q6_7"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q6_6"
+                android:layout_toRightOf="@+id/Q6_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q6_8"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/Q6_7"
+                android:layout_toRightOf="@+id/Q6_7"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q7_6"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Q6_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q7_7"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@+id/Q6_7"
+                android:layout_toEndOf="@+id/Q7_6"
+                android:layout_toRightOf="@+id/Q7_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q7_8"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q6_8"
+                android:layout_toEndOf="@+id/Q7_7"
+                android:layout_toRightOf="@+id/Q7_7"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q8_6"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q7_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q8_7"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q7_7"
+                android:layout_toEndOf="@+id/Q8_6"
+                android:layout_toRightOf="@+id/Q8_6"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/Q8_8"
+                style="@style/NineByNineSudokuTextView"
+                android:layout_below="@id/Q7_8"
+                android:layout_toEndOf="@id/Q8_7"
+                android:layout_toRightOf="@id/Q8_7"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

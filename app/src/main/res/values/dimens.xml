@@ -2,6 +2,7 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">20dp</dimen>
     <dimen name="activity_vertical_margin">10dp</dimen>
-    <dimen name="number_text_size">50sp</dimen>
-    <dimen name="number_padding">12dp</dimen>
+    <dimen name="four_by_four_sudoku_number_text_size">50sp</dimen>
+    <dimen name="nine_by_nine_sudoku_number_text_size">30sp</dimen>
+    <dimen name="number_padding">8dp</dimen>
 </resources>
